@@ -2,7 +2,7 @@
 title: "Welcome to the Blog"
 date: "2026-03-19"
 excerpt: "Every blog needs a first post. This one is about why this place exists, what you'll find here, and the kind of writing worth returning to."
-image: "/images/welcome.jpg"
+image: "/images/interstellar.jpg"
 category: "Culture"
 author: "Your Name"
 ---
