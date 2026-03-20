@@ -1,12 +1,14 @@
 import Link from "next/link";
 
 const navLinks = [
-  { label: "The Latest", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "om 165:an", href: "/om" },
+  { label: "nyhetsbrev", href: "/#nyhetsbrev" },
+  { label: "läs mer", href: "/#las-mer" },
+  { label: "kontakt", href: "/#kontakt" },
 ];
 
 function getCurrentDate(): string {
-  return new Date().toLocaleDateString("en-US", {
+  return new Date().toLocaleDateString("sv-SE", {
     weekday: "long",
     year: "numeric",
     month: "long",
@@ -17,7 +19,7 @@ function getCurrentDate(): string {
 export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
-      {/* Subtle gradient so text is readable over any image */}
+      {/* Gradient so text is readable over any image */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-transparent pointer-events-none" />
 
       <div className="relative px-4 sm:px-6 lg:px-8 pt-4 pb-6">

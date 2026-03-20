@@ -1,25 +1,33 @@
 import { getAllPosts } from "@/lib/posts";
 import FeaturedPost from "@/components/home/FeaturedPost";
 import PostGrid from "@/components/home/PostGrid";
+import NewsletterSection from "@/components/home/NewsletterSection";
+import ListeningSection from "@/components/home/ListeningSection";
 
 export default function HomePage() {
   const posts = getAllPosts();
-  const [featured, ...rest] = posts;
+  const featured = posts[0];
 
   return (
     <>
       {/* Full-bleed featured post */}
       {featured && <FeaturedPost post={featured} />}
 
-      {/* Rest of posts */}
-      {rest.length > 0 && (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-          <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-editorial-gray mb-10">
-            More Stories
-          </p>
-          <PostGrid posts={rest} />
-        </div>
-      )}
+      {/* Alla inlägg */}
+      <section id="las-mer" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
+        <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-editorial-gray mb-10">
+          Läs mer
+        </p>
+        <PostGrid posts={posts} />
+      </section>
+
+      {/* Spotify */}
+      <ListeningSection />
+
+      {/* Nyhetsbrev */}
+      <section id="nyhetsbrev">
+        <NewsletterSection />
+      </section>
     </>
   );
 }
