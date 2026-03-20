@@ -34,7 +34,7 @@ export default function PostPage({ params }: PageProps) {
   }
 
   return (
-    <article className="py-10">
+    <article className="pb-10 pt-44">
       <PostHeader
         title={post.title}
         date={post.date}

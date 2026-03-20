@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr + "T00:00:00");
-  return date.toLocaleDateString("en-US", {
+  return date.toLocaleDateString("sv-SE", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -47,7 +47,7 @@ export default function PostHeader({ title, date, author, category, image }: Pos
         </h1>
 
         <div className="flex items-center gap-3 font-sans text-xs text-editorial-gray pb-6 border-b border-editorial-rule">
-          {author && <span className="italic">By {author}</span>}
+          {author && <span className="italic">Av {author}</span>}
           {author && date && <span className="text-editorial-rule">|</span>}
           {date && <span>{formatDate(date)}</span>}
         </div>

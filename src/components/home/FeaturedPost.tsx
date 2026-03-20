@@ -4,7 +4,7 @@ import type { Post } from "@/lib/types";
 
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr + "T00:00:00");
-  return date.toLocaleDateString("en-US", {
+  return date.toLocaleDateString("sv-SE", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -47,7 +47,7 @@ export default function FeaturedPost({ post }: { post: Post }) {
             </p>
           )}
           <div className="flex items-center gap-2 font-sans text-[11px] text-white/50">
-            {post.author && <span className="italic">By {post.author}</span>}
+            {post.author && <span className="italic">Av {post.author}</span>}
             {post.author && post.date && <span>&middot;</span>}
             {post.date && <span>{formatDate(post.date)}</span>}
           </div>

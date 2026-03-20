@@ -1,7 +1,6 @@
 import { getAllPosts } from "@/lib/posts";
 import FeaturedPost from "@/components/home/FeaturedPost";
 import PostGrid from "@/components/home/PostGrid";
-import NewsletterSection from "@/components/home/NewsletterSection";
 import ListeningSection from "@/components/home/ListeningSection";
 
 export default function HomePage() {
@@ -23,11 +22,6 @@ export default function HomePage() {
 
       {/* Spotify */}
       <ListeningSection />
-
-      {/* Nyhetsbrev */}
-      <section id="nyhetsbrev">
-        <NewsletterSection />
-      </section>
     </>
   );
 }

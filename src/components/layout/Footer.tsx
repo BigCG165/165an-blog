@@ -1,10 +1,19 @@
 import Link from "next/link";
+import NewsletterForm from "@/components/home/NewsletterForm";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer id="kontakt" className="bg-editorial-cream mt-16 border-t border-editorial-rule">
+    <footer id="kontakt" className="bg-editorial-cream border-t border-editorial-rule">
+      {/* Nyhetsbrev */}
+      <div id="nyhetsbrev">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <NewsletterForm />
+        </div>
+      </div>
+
+      {/* Kontakt + copyright */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Logo */}

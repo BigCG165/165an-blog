@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function OmPage() {
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-6 py-24">
+    <div className="max-w-2xl mx-auto px-4 sm:px-6 pb-24 pt-48">
       <p className="font-sans text-[10px] tracking-[0.18em] uppercase text-editorial-red mb-4">
         Om bloggen
       </p>
