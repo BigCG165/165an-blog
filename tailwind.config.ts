@@ -34,15 +34,23 @@ const config: Config = {
                 textDecoration: "underline",
               },
             },
+            h1: {
+              fontFamily: "'Cormorant', Georgia, serif",
+              fontWeight: "300",
+            },
             h2: {
-              fontFamily: "Georgia, 'Times New Roman', serif",
-              fontWeight: "700",
+              fontFamily: "'Cormorant', Georgia, serif",
+              fontWeight: "300",
               borderBottom: "1px solid #d4d0c8",
               paddingBottom: "0.5rem",
             },
             h3: {
-              fontFamily: "Georgia, 'Times New Roman', serif",
-              fontWeight: "700",
+              fontFamily: "'Cormorant', Georgia, serif",
+              fontWeight: "300",
+            },
+            h4: {
+              fontFamily: "'Cormorant', Georgia, serif",
+              fontWeight: "300",
             },
             blockquote: {
               fontStyle: "italic",

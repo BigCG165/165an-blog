@@ -12,7 +12,7 @@ export default function Footer() {
             style={{ fontFamily: "'Cormorant', Georgia, serif", fontWeight: 300, letterSpacing: "0.06em" }}
             className="text-2xl uppercase text-editorial-black hover:text-editorial-red transition-colors"
           >
-            My Blog
+            165:an
           </Link>
           <p className="font-sans text-xs text-editorial-gray tracking-widest uppercase">
             &copy; {year} All rights reserved

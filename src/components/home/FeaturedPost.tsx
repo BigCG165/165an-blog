@@ -38,7 +38,7 @@ export default function FeaturedPost({ post }: { post: Post }) {
               {post.category}
             </p>
           )}
-          <h2 className="font-serif text-3xl md:text-5xl font-bold leading-tight text-white max-w-3xl mb-3">
+          <h2 className="text-3xl md:text-5xl leading-tight text-white max-w-3xl mb-3" style={{ fontFamily: "'Cormorant', Georgia, serif", fontWeight: 300 }}>
             {post.title}
           </h2>
           {post.excerpt && (

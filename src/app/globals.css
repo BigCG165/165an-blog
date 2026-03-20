@@ -39,3 +39,14 @@ hr {
 .rule-black {
   border-top: 2px solid var(--color-text);
 }
+
+/* Force Cormorant on all prose headings */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  font-family: 'Cormorant', Georgia, serif !important;
+  font-weight: 300 !important;
+}

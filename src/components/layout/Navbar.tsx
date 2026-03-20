@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
       {/* Subtle gradient so text is readable over any image */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-transparent pointer-events-none" />
 
       <div className="relative px-4 sm:px-6 lg:px-8 pt-4 pb-6">
         {/* Date */}
@@ -31,9 +31,9 @@ export default function Navbar() {
           <Link
             href="/"
             style={{ fontFamily: "'Cormorant', Georgia, serif", fontWeight: 300, letterSpacing: "0.06em" }}
-            className="text-5xl md:text-7xl uppercase text-white hover:text-white/70 transition-colors duration-200"
+            className="text-5xl md:text-7xl text-white hover:text-white/70 transition-colors duration-200"
           >
-            My Blog
+            165:an
           </Link>
         </div>
 

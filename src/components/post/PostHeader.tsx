@@ -42,7 +42,7 @@ export default function PostHeader({ title, date, author, category, image }: Pos
           </p>
         )}
 
-        <h1 className="font-serif text-4xl md:text-5xl font-bold leading-tight text-editorial-black mb-5">
+        <h1 className="text-4xl md:text-5xl leading-tight text-editorial-black mb-5" style={{ fontFamily: "'Cormorant', Georgia, serif", fontWeight: 300 }}>
           {title}
         </h1>
 
