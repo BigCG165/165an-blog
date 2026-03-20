@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const emails = await kv.smembers<string[]>("subscribers");
+    const emails = (await kv.smembers("subscribers")) as string[];
     if (!emails || emails.length === 0) {
       return NextResponse.json({ message: "Inga prenumeranter." });
     }
